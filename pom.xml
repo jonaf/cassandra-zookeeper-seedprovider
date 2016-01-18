@@ -10,7 +10,7 @@
         <java.version>1.7</java.version>
         <slf4j.version>1.7.10</slf4j.version>
         <curator.version>2.9.1</curator.version>
-        <cassandra.version>2.1.4</cassandra.version>
+        <cassandra.version>2.2.4</cassandra.version>
         <junit.version>4.12</junit.version>
         <testing.version>6.9.9</testing.version>
     </properties>
@@ -82,6 +82,7 @@
                             <goal>single</goal>
                         </goals>
                         <configuration>
+                            <tarLongFileMode>posix</tarLongFileMode>
                             <descriptors>
                                 <descriptor>src/main/resources/dist.xml</descriptor>
                             </descriptors>
